@@ -1,91 +1,131 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background: #1D202B;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
+  background: #1d202b;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
 }
 
 .container {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 40px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+
+  /* Flexbox */
+  /* display: flex;
+  el gap nos sirve para dar una separación al elemento
+  gap: 20px; */
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
 }
 
 .title {
-	font-size: 24px;
-	padding: 20px 0;
+  font-size: 24px;
+  padding: 20px 0;
 }
 
 .container-concerts {
-	
+	/* Flexbox */
+	/* width: 70%; */
+
+	/* display: flex;
+  nos permite que cuando ya no haya espacio lo baje
+	flex-wrap: wrap;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
 }
 
 .card {
-	border-radius: 10px;
-	min-height: 200px;
-	font-weight: bold;
-	padding: 20px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
 
-	
+  /* width: 33.33%; */
+  
 }
 
 .card .text {
-	height: 100%;
-	
-	
+  height: 100%;
+
+  /* Flebox */
+  display: flex;
+  /* esto nos permite que lo ponga en forma de columna */
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Grid */
+  /* display: grid;
+  grid-template-rows: 1fr auto; */
 }
 
 .banner {
-	border-radius: 10px;
-	text-align: center;
-	padding: 20px;
-	background-size: cover;
-	background-position: center center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  
+  /* Flexbox */
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 
+  /* Grid */
+  /* display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center; */
 
+  
 }
 
 .banner ul {
-	list-style: none;
+  list-style: none;
 }
 
 .banner ul li {
-	margin: 15px;
-	font-weight: bold;
+  margin: 15px;
+  font-weight: bold;
 }
 
 .banner .btn {
-	background: #FFD600;
-	display: block;
-	width: 100%;
-	font-weight: bold;
-	font-size: 14px;
-	text-align: center;
-	padding: 10px;
-	border: none;
-	border-radius: 100px;
-	font-family: 'Roboto', sans-serif;
-	cursor: pointer;
+  background: #ffd600;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
-	
 }
 
 @media screen and (max-width: 700px) {
-	
 }
 
 @media screen and (max-width: 600px) {
-
 }
