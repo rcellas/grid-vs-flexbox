@@ -24,7 +24,9 @@ body {
 
   /* Grid */
   display: grid;
+  /* cuando trabajamos grid no tenemos que decirle que tenga unas medidas */
   grid-template-columns: 3fr 1fr;
+  gap: 20px;
 
 }
 
@@ -122,6 +124,16 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .container{
+    display: block;
+  }
+
+  .container-concerts {
+    grid-template-columns: 1fr;
+  }
+  .banner{
+    margin: 20px auto;
+  }
 }
 
 @media screen and (max-width: 700px) {
