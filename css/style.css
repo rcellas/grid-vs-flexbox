@@ -10,21 +10,19 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.contenedor {
+.container {
 	width: 90%;
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
-
-	
 }
 
-.titulo {
+.title {
 	font-size: 24px;
 	padding: 20px 0;
 }
 
-.contenedor-conciertos {
+.container-concerts {
 	
 }
 
@@ -41,7 +39,7 @@ body {
 	
 }
 
-.card .textos {
+.card .text {
 	height: 100%;
 	
 	
@@ -66,7 +64,7 @@ body {
 	font-weight: bold;
 }
 
-.banner .boton {
+.banner .btn {
 	background: #FFD600;
 	display: block;
 	width: 100%;
