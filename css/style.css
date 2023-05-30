@@ -39,6 +39,30 @@ body {
 	
 }
 
+.card-1{
+  background-image: url('../assets/img/1.jpg')
+}
+
+.card-2{
+  background-image: url('../assets/img/2.jpg')
+}
+
+.card-3{
+  background-image: url('../assets/img/3.jpg')
+}
+
+.card-4{
+  background-image: url('../assets/img/4.jpg')
+}
+
+.card-5{
+  background-image: url('../assets/img/5.jpg')
+}
+
+.card-6{
+  background-image: url('../assets/img/6.jpg')
+}
+
 .card .text {
 	height: 100%;
 	
@@ -51,8 +75,7 @@ body {
 	padding: 20px;
 	background-size: cover;
 	background-position: center center;
-
-
+  background-image: url('../assets/img/banner.jpg')
 }
 
 .banner ul {
